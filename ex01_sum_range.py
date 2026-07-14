@@ -14,7 +14,10 @@ def sum_range(n):
     sum_range(10) -> 55
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    total = 0
+    for i in range(1, n+1):
+        total += i
+    return total
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

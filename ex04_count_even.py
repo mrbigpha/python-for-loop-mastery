@@ -14,7 +14,11 @@ def count_even(numbers):
     count_even([2, 4, 6]) -> 3
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    count = 0 
+    for i in numbers:
+        if i  % 2 == 0:
+            count += 1
+    return count
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

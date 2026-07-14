@@ -14,7 +14,12 @@ def vowel_count(text):
     vowel_count("Python") -> 1 (o)
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    vowels = "aeiou"
+    count = 0
+    for char in text.lower():
+        if char in vowels:
+            count += 1
+    return count
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

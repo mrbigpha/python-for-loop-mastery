@@ -15,7 +15,10 @@ def calculate_factorial(n):
     calculate_factorial(0) -> 1
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+    return fact
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

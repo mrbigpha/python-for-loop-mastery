@@ -13,7 +13,10 @@ def reverse_string(text):
     reverse_string("hello") -> "olleh"
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    result = ""
+    for char in text:
+        result = char + result  # วางตัวอักษรใหม่ไว้หน้าสุดเสมอ
+    return result
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

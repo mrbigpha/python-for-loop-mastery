@@ -14,7 +14,11 @@ def find_max(numbers):
     find_max([-1, -5, -2]) -> -1
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    max_val = numbers[0]
+    for i in numbers:
+        if i > max_val:
+            max_val = i
+    return max_val
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

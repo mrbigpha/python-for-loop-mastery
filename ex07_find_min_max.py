@@ -15,7 +15,15 @@ def find_min_max(numbers):
     find_min_max([10]) -> (10, 10)
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    minv = numbers[0]
+    maxv = numbers[0]
+
+    for i in numbers:
+        if i < minv:
+            minv = i
+        if i > maxv:
+            maxv = i
+    return (minv, maxv)
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

@@ -17,7 +17,8 @@ def step_sum(start, end, step):
     step_sum(2, 10, 3) -> 2 + 5 + 8 = 15
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    total = sum(range(start, end + 1,step))
+    return total
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

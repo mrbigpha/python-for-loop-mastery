@@ -13,7 +13,10 @@ def multiplication_table(n):
     multiplication_table(2) -> [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24]
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    result = []
+    for i in range(1,13):
+        result.append(n*i)
+    return result
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

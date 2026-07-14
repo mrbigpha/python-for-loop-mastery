@@ -13,7 +13,11 @@ def find_min(numbers):
     find_min([10, 5, 8, 2, 7]) -> 2
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    min_val = numbers[0]
+    for i in numbers:
+        if i < min_val:
+            min_val = i
+    return min_val
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

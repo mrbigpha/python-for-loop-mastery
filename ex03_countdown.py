@@ -15,7 +15,7 @@ def countdown(n):
     countdown(3) -> [3, 2, 1]
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    return list(range(n,0,-1))
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":

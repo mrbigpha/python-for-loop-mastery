@@ -16,7 +16,15 @@ def fibonacci_list(n):
     fibonacci_list(1) -> [0]
     """
     # --- เริ่มเขียนโค้ดด้านล่างนี้ ---
-    raise NotImplementedError("ลบไลน์นี้แล้วเขียนโค้ดของคุณที่นี่")
+    fib = [0]
+    if n == 1:
+        return fib
+
+    fib.append(1)
+    for i in range(2, n):
+        next_num = fib[i-1] + fib[i-2]
+        fib.append(next_num)
+    return fib
     # --- สิ้นสุดการเขียนโค้ด ---
 
 if __name__ == "__main__":
